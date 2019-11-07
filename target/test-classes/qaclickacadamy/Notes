@@ -1,0 +1,134 @@
+Maven uses:
+
+Central repository for dependencies
+Common structure among project.
+Flexible in using CI(Continuous Integration) tools.(Example Jenkins)
+Plugins are used for run and reports
+
+	
+	Command to create Maven Project in command prompt: mvn archetype:generate -DgroupId=groupIdName -DartifactId=ArtifactIdName -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	
+	
+	After creating the project Goto the Artifact folder in cmd to create class files: mvn eclipse:eclipse 
+	
+	GoTo eclipse/ import../existing maven projects
+	
+	In pom.xml add dependencies of required jars like Selenium, testNG etc.(dependencies will be find from Maven repository website)
+	
+	To run Maven project SureFire plugin needed,  (plugin will be find from Maven repository website))
+	
+	The class should be of name Test included then only Maven will run those tests otherwise it will skip the tests.
+	
+	To clean any cache or some temp data run : mvn clean
+	
+	To compile for any Syntax errors: mvn compile
+	
+	To run Maven tests: mvn test
+	
+	To run a single test/java file : mvn -Dtest=filename test   Example:  mvn -Dtest=SeleniumTest test 
+	
+	
+	To integrate the testNG.xml file, we need to include that in SureFire plugin in pom.xml
+
+
+	We use profiling to switch from testNG xml files to run, command is: mvn test -Pprofilename  Example: mvn test -Prun1
+
+
+
+
+
+
+
+
+
+Jenkins:
+
+
+
+
+	Download Jenkins (Generic_JavaPackage(.war) file)
+	After GoTo the folder where war file is placed in cmd prompt and run: java -jar jenkins.war -httpPort-portnumber example : 8080 in my local machine
+	
+	
+	Username: admin	
+	Password: admin
+	Mail:  ravitejag666666@gmail.com
+	
+	port:8080
+	
+	
+	
+	
+	
+	In Jenkins:
+	Goto Manage Jenkins-->Global Tool Configuration  -- Add Jdk and Maven Home path
+
+	Copy the Maven project to .Jenkins folder.
+	To create new job- NewItem-->EnterName-->FreeStyle project-->Advanced--> Use Custom Workspace-->In Directory place the path upto MavenProject-->Build-->Add Build Step--> Invoke Top Level Maven targets--> command to run maven project-->test -Pprofilename or test(here mvn is not required)
+	
+	
+	click on build now to run.
+	
+	for report generation using the testNG in Jenkins: install plugin testNG results plugin
+	configure for the job-->post build actions-->Add-->publish testNG results
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Excel Data Driven:
+	
+	
+	
+	How can we drive data from excel into the tests?: Using Apache poi API.
+	
+	
+	
+	Maven Project creation through eclipse:
+
+
+
+	File--> New Maaven project-->select Create Simple Project(skip archetype selecttion)
+	Enter groupId and artifactId
+	Get dependencies of Apache poi(poi-ooxml and poi) from maven repository
+	 
+	
+	
+	
+	
+	
+	Jdbc Connection: Add below dependency in pom.xml 
+	<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>7.0.0.jre8</version>
+</dependency>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
