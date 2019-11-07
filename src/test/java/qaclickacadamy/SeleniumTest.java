@@ -11,9 +11,5 @@ public class SeleniumTest {
 		System.out.println("SeleniumTest1");
 	}
 	
-	@Test
-	public void SeleniumTest2()
-	{
-		System.out.println("SeleniumTest2");
-	}
+
 }
