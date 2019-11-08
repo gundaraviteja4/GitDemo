@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vehicle">
+  <test name="VehicleTest">
+  <groups>
+  <run>
+  <include name="Smoke"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="testPackage.Test1"/>
+      <class name="testPackage.Test2"/>
+      <class name="testPackage.Test3"/>
+    </classes>
+  </test>
+  
+  <test name="LoginTest">
+   <groups>
+  <run>
+  <exclude name="Smoke"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="testPackage.Test4"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

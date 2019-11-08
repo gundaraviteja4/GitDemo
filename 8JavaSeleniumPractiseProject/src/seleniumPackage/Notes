@@ -1,0 +1,26 @@
+Grid:
+
+Before Running Test5 we need to start hub and node
+1. Download selenium standalone server 
+2. GoTo the path in cmd prompt where selenium standalone server is located and give below command
+	
+	java -jar selenium-server-standalone-3.141.59.jar -role hub                -------> this will create hub in default port number of 4444
+
+
+3. GoTo another physical machine and make sure java to be installed and create node and register for hub, download Download selenium standalone server in another machine also
+4. GoTo the path in cmd prompt where selenium standalone server is located and give below command
+
+		
+
+	java -Dwebdriver.chrome.driver="D:\Selenium\Driver\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://172.24.42.79:4444/grid/register -port 5566
+
+
+	EXPLANATION: 
+		
+		-D is parameter.
+		webdriver.chrome.driver="D:\Selenium\Drivers\chromedriver.exe" means the node works for chrome only, if we give firefox it will work only for firefox.
+		role can be node or webdriver
+		hub ip address should be specified
+		port number can be any random number.
+
+

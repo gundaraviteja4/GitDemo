@@ -1,0 +1,17 @@
+How to run tests with TestNG?
+You need to have @Test Annotation followed by method
+You can define multiple tests from single class
+You can modularize the test cases based upon functionality and trigger them accordingly
+right click on the project-->GoTo TestNG/Convert to TestNG  ---- testng.xml will generated
+You can also get a control on running specific methods from test case
+
+Flow/Structure of testng.xml : TestSuite->TestFolder(Module)->test cases 
+Groups: if the test methods belong to particular group and we can specify the group in xml file to exclude/include
+Helper attributes:
+	dependsOnMethods : So for a method to run then the dependent methods to be run first and we will specify in the dependsOnMethods attribute
+	enabled : if enabled is false then test method will be skipped/disabled.
+	timeOut: for a method to trigger error it will wait for timeout value  
+	
+	
+	
+	

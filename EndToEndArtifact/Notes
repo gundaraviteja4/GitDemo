@@ -1,0 +1,27 @@
+Reports:
+For reports we use extent reports
+ we have added 2 dependencys of extent report in pom.xml
+ 
+ 
+ To set browser from Jenkins follow below steps:
+ 
+ In BaseClass.Java - System.getProperty() is used to get browser property from maven command.
+ Goto Jenkins and Configure Section, 
+ 	select 'This project is parameterised'
+ 	select 'Add Parameter/Choice Parameter' 
+ 	Provide Name, example browser
+ 	In Choices, enter chrome,firefox,ie
+ 	
+ 	Now Goto Configuration/Build Section, In maven command provide test -Dbrowser="$browser"   // choice parameter name given in line 12 above
+ 	
+Head less mode:
+ 	Which means test runs in background in browser(eg: chrome) and give results. Advantage is we can do operations on cbrowser while running tests in headless mode and test run is somewhat faster in headless mode
+ 	Using ChromeOptions class we can acheive headless mode, see BaseClass.java
+ 	
+ 	
+ Jdbc Connection: Add below dependency in pom.xml 
+	<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>7.0.0.jre8</version>
+</dependency>

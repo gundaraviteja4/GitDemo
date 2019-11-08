@@ -1,0 +1,128 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>group7</groupId>
+  <artifactId>7Artifact</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>7Artifact</name>
+  <url>http://maven.apache.org</url>
+  <profiles>
+  <profile>
+  <id>P1</id>
+  <build>
+   <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>1testng.xml</suiteXmlFile>
+           
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>    
+   </plugins>
+  </pluginManagement>
+ </build>
+ </profile>
+ <profile>
+  <id>P2</id>
+  <build>
+   <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+          
+            <suiteXmlFile>2testng_include_exclude.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>    
+   </plugins>
+  </pluginManagement>
+ </build>
+ </profile>
+ <profile>
+  <id>P3</id>
+  <build>
+   <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>3testng_groups.xml</suiteXmlFile>
+           
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>    
+   </plugins>
+  </pluginManagement>
+ </build>
+ </profile>
+ <profile>
+  <id>P4</id>
+  <build>
+   <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>4testng_parameterization.xml</suiteXmlFile>
+           
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>    
+   </plugins>
+  </pluginManagement>
+ </build>
+ </profile>
+ <profile>
+  <id>P5</id>
+  <build>
+   <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>5testng_propertiesfile_HandlingSSL_Screenshot_cookies.xml</suiteXmlFile>
+           
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>    
+   </plugins>
+  </pluginManagement>
+ </build>
+ </profile>
+ </profiles>
+  <dependencies>
+     <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>2.53.1</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.0.0</version>
+    <scope>test</scope>
+</dependency>
+
+  </dependencies>
+</project>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="81688" started-at="2019-11-05T11:03:55Z" finished-at="2019-11-05T11:05:16Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="81688" started-at="2019-11-05T11:03:55Z" finished-at="2019-11-05T11:05:16Z">
+      <class name="EndToEndgroup.Test1HomePage">
+        <test-method status="PASS" signature="TestLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EndToEndgroup.Test1HomePage@302c971f]" name="TestLogin" duration-ms="43789" started-at="2019-11-05T11:03:55Z" data-provider="TestDataMethod" finished-at="2019-11-05T11:04:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gunda@cybage.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gunda]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestData1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method status="PASS" signature="TestLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EndToEndgroup.Test1HomePage@302c971f]" name="TestLogin" duration-ms="37868" started-at="2019-11-05T11:04:39Z" data-provider="TestDataMethod" finished-at="2019-11-05T11:05:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gunda123456@cybage.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gunda123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestData2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:EndToEndgroup.Test1HomePage@302c971f]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-05T11:05:16Z" finished-at="2019-11-05T11:05:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EndToEndgroup.Test1HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="7373" started-at="2019-11-05T11:05:16Z" finished-at="2019-11-05T11:05:24Z">
+    <groups>
+    </groups>
+    <test name="Test1WithChrome" duration-ms="6281" started-at="2019-11-05T11:05:16Z" finished-at="2019-11-05T11:05:23Z">
+      <class name="EndToEndgroup.Test2CrossBrowser">
+        <test-method status="PASS" signature="TestLoginMethod(java.lang.String)[pri:0, instance:EndToEndgroup.Test2CrossBrowser@4007f65e]" name="TestLoginMethod" duration-ms="6281" started-at="2019-11-05T11:05:16Z" finished-at="2019-11-05T11:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLoginMethod -->
+      </class> <!-- EndToEndgroup.Test2CrossBrowser -->
+    </test> <!-- Test1WithChrome -->
+    <test name="Test2WithFirefox" duration-ms="7373" started-at="2019-11-05T11:05:16Z" finished-at="2019-11-05T11:05:24Z">
+      <class name="EndToEndgroup.Test2CrossBrowser">
+        <test-method status="PASS" signature="TestLoginMethod(java.lang.String)[pri:0, instance:EndToEndgroup.Test2CrossBrowser@6cb107fd]" name="TestLoginMethod" duration-ms="7373" started-at="2019-11-05T11:05:16Z" finished-at="2019-11-05T11:05:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLoginMethod -->
+      </class> <!-- EndToEndgroup.Test2CrossBrowser -->
+    </test> <!-- Test2WithFirefox -->
+  </suite> <!-- Suite (0) -->
+</testng-results>

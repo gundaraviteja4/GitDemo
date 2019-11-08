@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vehicle">
+<listeners>
+<listener class-name = "testPackage.Listeners"/>
+</listeners>
+<parameter name="url" value="xyz.com"/>
+  <test name="VehicleTest">
+  <parameter name="Username" value="uname1"/>
+  <parameter name="Password" value="pwd1"/>
+    <classes>
+      <class name="testPackage.Test1"/>
+      <class name="testPackage.Test2"/>
+      <class name="testPackage.Test3"/>
+      <class name="testPackage.Test5"/>
+    </classes>
+  </test>
+  
+  <test name="LoginTest">
+  <parameter name="Username1" value="uname2"/>
+  <parameter name="Password1" value="pwd2"/>
+    <classes>
+      <class name="testPackage.Test4"/>
+      <class name="testPackage.Test6"/>
+      
+      
+  
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

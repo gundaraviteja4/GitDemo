@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Test2(failed)">
+    <classes>
+      <class name="group7.LionTest">
+        <methods>
+          <include name="smallLion"/>
+          <include name="AfterSuite1"/>
+          <include name="BeforeSuite1"/>
+        </methods>
+      </class> <!-- group7.LionTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

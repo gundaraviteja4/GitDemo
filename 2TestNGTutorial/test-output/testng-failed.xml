@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Vehicle]">
+  <parameter name="Username1" value="uname2"/>
+  <parameter name="Username" value="uname1"/>
+  <parameter name="Password1" value="pwd2"/>
+  <parameter name="url" value="xyz.com"/>
+  <parameter name="Password" value="pwd1"/>
+  <listeners>
+    <listener class-name="testPackage.Listeners"/>
+  </listeners>
+  <test name="VehicleTest(failed)">
+    <parameter name="Username" value="uname1"/>
+    <parameter name="Password" value="pwd1"/>
+    <classes>
+      <class name="testPackage.Test5">
+        <methods>
+          <include name="FetchFromPropertiesFile"/>
+          <include name="ParameterExample1" invocation-numbers="0"/>
+          <include name="ParameterExample2"/>
+        </methods>
+      </class> <!-- testPackage.Test5 -->
+      <class name="testPackage.Test2">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- testPackage.Test2 -->
+      <class name="testPackage.Test4">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- testPackage.Test4 -->
+      <class name="testPackage.Test3">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- testPackage.Test3 -->
+      <class name="testPackage.Test1">
+        <methods>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- testPackage.Test1 -->
+    </classes>
+  </test> <!-- VehicleTest(failed) -->
+  <test name="LoginTest(failed)">
+    <parameter name="Username1" value="uname2"/>
+    <parameter name="Password1" value="pwd2"/>
+    <classes>
+      <class name="testPackage.Test2">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- testPackage.Test2 -->
+      <class name="testPackage.Test4">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- testPackage.Test4 -->
+      <class name="testPackage.Test6">
+        <methods>
+          <include name="FetchFromPropertiesFile"/>
+        </methods>
+      </class> <!-- testPackage.Test6 -->
+      <class name="testPackage.Test3">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- testPackage.Test3 -->
+      <class name="testPackage.Test1">
+        <methods>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- testPackage.Test1 -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Vehicle] -->

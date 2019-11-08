@@ -1,0 +1,3 @@
+variable can be public or static in interface, but not private or protected
+only static and default methods can have body in interface
+we can not access static methods in implements class, but we can access static variables

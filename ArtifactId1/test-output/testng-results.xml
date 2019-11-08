@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21262" started-at="2019-09-12T14:11:55Z" finished-at="2019-09-12T14:12:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21262" started-at="2019-09-12T14:11:55Z" finished-at="2019-09-12T14:12:16Z">
+      <class name="groupId1.ReadExcelData">
+        <test-method status="PASS" signature="launchloginpage()[pri:0, instance:groupId1.ReadExcelData@4883b407]" name="launchloginpage" is-config="true" duration-ms="19858" started-at="2019-09-12T14:11:55Z" finished-at="2019-09-12T14:12:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchloginpage -->
+        <test-method status="PASS" signature="GetExcelData(java.lang.String, java.lang.String)[pri:0, instance:groupId1.ReadExcelData@4883b407]" name="GetExcelData" duration-ms="284" started-at="2019-09-12T14:12:15Z" data-provider="retrieveData" finished-at="2019-09-12T14:12:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelData -->
+        <test-method status="PASS" signature="GetExcelData(java.lang.String, java.lang.String)[pri:0, instance:groupId1.ReadExcelData@4883b407]" name="GetExcelData" duration-ms="151" started-at="2019-09-12T14:12:16Z" data-provider="retrieveData" finished-at="2019-09-12T14:12:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelData -->
+        <test-method status="PASS" signature="GetExcelData(java.lang.String, java.lang.String)[pri:0, instance:groupId1.ReadExcelData@4883b407]" name="GetExcelData" duration-ms="131" started-at="2019-09-12T14:12:16Z" data-provider="retrieveData" finished-at="2019-09-12T14:12:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelData -->
+        <test-method status="PASS" signature="GetExcelData(java.lang.String, java.lang.String)[pri:0, instance:groupId1.ReadExcelData@4883b407]" name="GetExcelData" duration-ms="130" started-at="2019-09-12T14:12:16Z" data-provider="retrieveData" finished-at="2019-09-12T14:12:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelData -->
+        <test-method status="PASS" signature="GetExcelData(java.lang.String, java.lang.String)[pri:0, instance:groupId1.ReadExcelData@4883b407]" name="GetExcelData" duration-ms="136" started-at="2019-09-12T14:12:16Z" data-provider="retrieveData" finished-at="2019-09-12T14:12:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelData -->
+        <test-method status="PASS" signature="GetExcelData(java.lang.String, java.lang.String)[pri:0, instance:groupId1.ReadExcelData@4883b407]" name="GetExcelData" duration-ms="150" started-at="2019-09-12T14:12:16Z" data-provider="retrieveData" finished-at="2019-09-12T14:12:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetExcelData -->
+      </class> <!-- groupId1.ReadExcelData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

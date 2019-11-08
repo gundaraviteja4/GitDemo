@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Value" value="viswat@cybage.com"/>
+  <parameter name="Browser" value="chrome"/>
+  <test name="Test(failed)">
+    <parameter name="Value" value="gundar@cybage.com"/>
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="TestPackage.TestNGClass1">
+        <methods>
+          <include name="sendKeys1" invocation-numbers="0"/>
+          <include name="closeAllWindows"/>
+          <include name="closeAllWindows"/>
+          <include name="LaunchBrowser"/>
+          <include name="LaunchBrowser"/>
+        </methods>
+      </class> <!-- TestPackage.TestNGClass1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

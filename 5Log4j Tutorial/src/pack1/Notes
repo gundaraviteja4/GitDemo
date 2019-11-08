@@ -1,0 +1,8 @@
+Log 4j:
+	
+	download binary.zip log 4j from google. 
+	Add log4j-api and log4j-core from Add External jars.
+	
+	we need to add resources folder from properties/add build path/add folders (since we have xml file-there we provide configurations)
+	check for Log4j2.xml in resources folder to Log all output to console or to a file.
+	

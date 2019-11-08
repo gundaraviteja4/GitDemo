@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="EndToEndgroup.Test3Listeners"/>
+    <listener class-name="resources.ExtentReportsNG"/>
+  </listeners>
+  <test thread-count="3" verbose="0" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="EndToEndgroup.Test1HomePage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TestLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- EndToEndgroup.Test1HomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

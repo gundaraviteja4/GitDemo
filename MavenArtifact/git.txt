@@ -1,0 +1,54 @@
+Reference : https://confluence.atlassian.com/bitbucketserver066/basic-git-commands-978197531.html
+
+
+Download Git and install in local machine.
+Open https://github.com/ and create an account, create 1 repository.
+
+1. We need to tell git who we are
+    Commands: 
+	git config --global user.name "raviteja"
+	git config --global user.email gundaraviteja4@gmail.com
+
+2. Create 1 folder in C:/users/gundar, copy some files of existing project and in cmd prompt, cd foldername
+
+3. We need to make created folder as Git folder using below command
+	git init -- This will create a hidden .git repository
+
+4. To push our code to github we need to first commit the files, we commit the files which are present in stash/staging
+	so the flow is: Normal files-->stash/staging-->commit-->GitHub
+
+5. Use below command for Normal files to add to stash/staging
+	git add * --This will add all files to stash/staging
+	git status -- this command is to know what all files are in stash
+
+6. Command for commit: git commit -m "first commit"  -- here m is message
+
+7. For the 1st time we need to tell our local git repository the remote git server, the command is:
+	git remote add origin https://github.com/gundaraviteja4/GitDemo.git -- here https://github.com/gundaraviteja4/GitDemo.git is the github repository that we have created account and created gitdemo repository
+
+8. command to send/push our code: git push origin master 
+	explanation: push code to origin (https://github.com/gundaraviteja4/GitDemo.git) master branch
+
+9. command to download/pull code: 
+	git clone https://github.com/gundaraviteja4/GitDemo.git -- for the first time we use clone on the repository, and pull after that
+	git pull origin master
+	
+
+10. Command to create a new branch and switch to it: git checkout -b branchname
+	git branch -- is used to check the current branch that we are working.
+	To switch to another branch: git checkout branchname
+
+
+11. To merge the code between branches or from branch to master, command is:
+	switch to master: git checkout master and then
+		git merge branchname
+
+
+
+Merge Conflict example:
+
+
+person A- Is in master branch - is working on some file x and commit.
+person B- Created new and switched to branch and working on same file x, he updated the file and did commit (but he didnt merge the changes to master)
+person A- Switched to master branch and updated the file x and commit.
+person B- Switch to developbranch and update the file x and commit, now person B wants to merge the code from master branch(git merge master), now we will get merge conflict, resolve and again merge
