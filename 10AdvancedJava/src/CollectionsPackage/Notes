@@ -1,0 +1,30 @@
+Collections(Java.util) framework uses interfaces and classes, below are the collections type
+
+1. List has 3 classes -- all the classes which implements list interface will accept duplicate values
+	Arraylist
+	LinkedList
+	Vector
+2. Set		--	all the classes which implements set interface will not accept duplicate values, this is difference between set and list
+	HashSet
+	TreeSet
+	LinkedHashSet
+3. Map
+
+
+
+
+list guarantes the order but set doesn't i.e set may return values randomly
+
+
+Difference between HashMap and HashTable:
+
+	HashMap is not Synchronized and not thread safe : that means multiple programs can rum simultaneously at a time in HashMap but in HashTable 1 program has to wait for another to complete.
+	HashMap allows Null keys and Null values but HashTable doesn't allow Null keys and Null values.
+	HashMap uses Iterator but HashTable uses Enumerator 
+
+
+
+
+
+
+

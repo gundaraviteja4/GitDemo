@@ -1,0 +1,6 @@
+Access Modifiers : 
+By default variables and methods are default
+public: We can access methods or variables in any class or package.
+default: We can access methods or variables in any class of same package, we cannot access outside package.
+private: We cannot access methods or variables outside class.
+protected: We can access methods or variables in Sub classes only of different package
